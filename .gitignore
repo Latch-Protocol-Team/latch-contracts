@@ -1,0 +1,8 @@
+foundry-out/
+foundry-out-legacy/
+cache/
+out/
+.env
+.env.*
+broadcast/
+node_modules/

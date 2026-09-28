@@ -1,0 +1,20 @@
+Latch contracts
+Copyright (C) 2026 Latch Protocol
+
+packages/core is a derivative work of PancakeSwap Infinity Core
+(https://github.com/pancakeswap/infinity-core, commit d0e8793), which is licensed
+GPL-2.0-or-later. Its copyright notices and licence headers are kept as they were.
+Latch Protocol is not affiliated with PancakeSwap.
+
+What Latch changed in packages/core:
+  - Vault.sync() can be called only inside a lock.
+  - Vault.lock() clears the reserve slots when the lock exits.
+  - The transient-storage layer has two backends behind one interface: EIP-1153, and a
+    storage backend for chains without it (src/libraries/transient).
+
+packages/hooks/src/base is written by Latch Protocol and licensed GPL-2.0-or-later.
+
+This program is free software; you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version. It is distributed WITHOUT ANY WARRANTY.
+See LICENSE.
