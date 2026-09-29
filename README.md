@@ -30,6 +30,12 @@ A Latch is a hook contract attached to a pool on Latch Protocol's core. This rep
   <a href="https://t.me/LatchDeploys">Launch alerts</a>
 </p>
 
+<p align="center">
+  <b>Building with a coding agent?</b> Start with a prompt, not the docs:<br>
+  <a href="prompts/build-a-latch.md">Build a Latch with Claude</a> &nbsp;·&nbsp;
+  <a href="AGENTS.md">The rules an agent follows</a>
+</p>
+
 ---
 
 ## Start in one command
@@ -59,6 +65,17 @@ Prefer to wire it yourself? Add this repository to a Foundry project as a submod
 git submodule add https://github.com/Latch-Protocol-Team/latch-contracts lib/latch-contracts
 git -C lib/latch-contracts submodule update --init --recursive
 ```
+
+## Build it with Claude
+
+| File | What it is for |
+|---|---|
+| [`prompts/build-a-latch.md`](prompts/build-a-latch.md) | A prompt to paste into [Claude Code](https://claude.com/claude-code): describe your Latch in five lines and it designs, writes, tests and reviews it |
+| [`AGENTS.md`](AGENTS.md) | The facts about the core and the rules a Latch lives by, written for coding agents |
+| `CLAUDE.md` in your project | The scaffolder writes one into every project it makes, with that project's own bitmap and parameters, so Claude Code follows the rules without being told |
+
+An agent's review is a first pass, not an audit. Have a Latch that holds money reviewed by
+somebody who did not write it.
 
 ## What is here
 
